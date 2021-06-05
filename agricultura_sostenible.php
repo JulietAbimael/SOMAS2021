@@ -6,7 +6,7 @@ include("header.php");
 <img src="img/agricultura1.PNG" alt="Emblema" style="">
 <img src="img/agricultura2.PNG" alt="Emblema" style="">
 
-
+//estilos botones
 <style type="text/css">
     .button {
     background:	#1CAF2A;
