@@ -6,7 +6,7 @@ include("header.php");
 <img src="img/agricultura1.PNG" alt="Emblema" style="">
 <img src="img/agricultura2.PNG" alt="Emblema" style="">
 
-//estilos botones
+
 <style type="text/css">
     .button {
     background:	#1CAF2A;
@@ -43,10 +43,10 @@ include("header.php");
     <div class="container1">
 
       
-    <a href="pdfs/Formato%20Registro%20Manuscritos%20SOMAS%202021.pdf" download="Registro" class="button"> Registro manuscrito </a>
-    <a href="pdfs/indicaciones%20ponentes%20congreso.pdf" download="Ponentes" class="button"> Indicaciones Ponentes</a>
-     <a href="pdfs/ejemplo%20Extenso.pdf" download="Seccion extenso" class="button"> Ejemplo extenso</a>
-     <a href="pdfs/EJEMPLO%20DE%20RESUMEN%20SIMPLE.pdf" downlad="seccion resumen" class="button"> Ejemplo resumen </a>
+    <a href="pdfs/RegistroManuscrito.pdf" download="Registro" class="button"> Registro manuscrito </a>
+    <a href="pdfs/indicacionesPonentes.pdf" download="Ponentes" class="button"> Indicaciones Ponentes</a>
+     <a href="pdfs/ejemploExtenso.pdf" download="Seccion extenso" class="button"> Ejemplo extenso</a>
+     <a href="pdfs/Resumen.pdf" download="Resumen" class="button"> Ejemplo resumen </a>
 
     
      </div>
