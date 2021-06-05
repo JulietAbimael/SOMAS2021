@@ -5,7 +5,7 @@ include("header.php");
 <center>
 <img src="img/agricultura1.PNG" alt="Emblema" style="">
 <img src="img/agricultura2.PNG" alt="Emblema" style="">
-</center>
+
 
 <style type="text/css">
     .button {
@@ -43,17 +43,17 @@ include("header.php");
     <div class="container1">
 
       
-    <a href="pdfs/CONVOCATORIAEVENTOSOMAS2021.pdf" download="Registro" class="button"> Registro manuscrito </a>
-    <a href="pdfs/seccion_congreso_nacional.pdf" download="Ponentes" class="button"> Indicaciones Ponentes</a>
-     <a href="pdfs/seccion_expo_virtual.pdf" download="Seccion extenso" class="button"> Ejemplo extenso</a>
-     <a href="pdfs/seccion_SIMPOSIO.pdf" downlad="seccion resumen" class="button"> Ejemplo resumen </a>
+    <a href="pdfs/Formato%20Registro%20Manuscritos%20SOMAS%202021.pdf" download="Registro" class="button"> Registro manuscrito </a>
+    <a href="pdfs/indicaciones%20ponentes%20congreso.pdf" download="Ponentes" class="button"> Indicaciones Ponentes</a>
+     <a href="pdfs/ejemplo%20Extenso.pdf" download="Seccion extenso" class="button"> Ejemplo extenso</a>
+     <a href="pdfs/EJEMPLO%20DE%20RESUMEN%20SIMPLE.pdf" downlad="seccion resumen" class="button"> Ejemplo resumen </a>
 
     
      </div>
   
 </body>
    
-
+</center>
 <?php
 include("footer.php");
 ?>
