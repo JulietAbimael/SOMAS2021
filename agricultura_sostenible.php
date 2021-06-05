@@ -46,7 +46,7 @@ include("header.php");
     <a href="pdfs/RegistroManuscrito.pdf" download="Registro" class="button"> Registro manuscrito </a>
     <a href="pdfs/indicacionesPonentes.pdf" download="Ponentes" class="button"> Indicaciones Ponentes</a>
      <a href="pdfs/ejemploExtenso.pdf" download="Seccion extenso" class="button"> Ejemplo extenso</a>
-     <a href="pdfs/Resumen.pdf" download="Resumen" class="button"> Ejemplo resumen </a>
+     <a href="pdfs/ResumenEjemplo.pdf" download="Resumen" class="button"> Ejemplo resumen </a>
 
     
      </div>
