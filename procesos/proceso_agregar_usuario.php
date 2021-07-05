@@ -15,7 +15,7 @@ $socio=utf8_decode($_POST['socio']);
 $telefono=utf8_decode($_POST['telefono']);
 $comprobantepago=utf8_decode($_POST['comprobantepago']);
 
-$sql="INSERT INTO `usuarios` (`idusuario`, `nombre`, `apellidos`, `correo`, `contrasena`, `tipo`,`socio` ,`telefono`, `comprobante_deposito`) VALUES (NULL, '$nombre', '$apellidos', '$correo', '$contrasena', '$tipo',$socio,'$telefono', $comprobantepago);";
+$sql="INSERT INTO `usuarios` (`idusuario`, `nombre`, `apellidos`, `correo`, `contrasena`, `tipo`,`socio` ,`telefono`, `comprobante_deposito`,`fecha_alta`) VALUES (NULL, '$nombre', '$apellidos', '$correo', '$contrasena', '$tipo',$socio,'$telefono', $comprobantepago,NOW());";
 
 $resultado=$conexion->query($sql);
 

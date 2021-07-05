@@ -170,6 +170,7 @@ $result=$conexion->query($sql);
         <th>Tipo</th>
         <th>Socio</th>
         <th>Teléfono</th>
+        <th>Fecha Alta</th>
         <th>Comprobante de pago</th>
         <th>Editar</th>
         <th>Borrar</th>
@@ -222,6 +223,8 @@ $result=$conexion->query($sql);
                 </td>
                  
                       <td ><?php echo utf8_encode($row["telefono"]); ?></td>
+                      <td ><?php echo utf8_encode($row["fecha_alta"]); ?></td>
+
                      <td ><?php  
 					if(utf8_encode($row["comprobante_deposito"])=='0'){
 						
