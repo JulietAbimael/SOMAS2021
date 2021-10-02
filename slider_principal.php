@@ -404,9 +404,9 @@
                 
                 
                 <!-- SLIDE 5 -->
-              <li data-index="rs-5" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="img/s55.PNG" data-rotate="0" data-saveperformance="off" data-title="Slide 5" data-description="">
+              <li data-index="rs-5" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="img/cursos_precongreso_1.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide 5" data-description="">
                 <!-- MAIN IMAGE -->
-                <img src="img/s55.PNG"  alt=""  data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+                <img src="img/cursos_precongreso_1.jpg"  alt=""  data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
                 <!-- LAYERS -->
 
                 <!-- LAYER NR. 1 -->
@@ -700,7 +700,7 @@
         <!-- Slider Revolution Ends -->
 
 <div style="text-align: center;" >
-<img src="img/calendario1.PNG" style="
+<img src="img/bueno_28_general.jpg" style="
     margin-top: 40px;
 ">
 </div>

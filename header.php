@@ -115,22 +115,29 @@ if(empty($_SESSION)){
           <nav id="menuzord-right" class="menuzord default no-bg">
             <ul class="menuzord-menu">
               <li class=""><a href="index.php">BIENVENIDA</a>
+                   <?php
+                //var_dump($_SESSION["loggedin"]);
+                if(empty($_SESSION["loggedin"])) {
+              ?>
               <li class=""><a href="informacion_general.php">INFORMACIÓN GENERAL</a> <!-- href="#servicios_home" CAMBIE -->
-              <li class=""><a href="#galeria_home">INDICACIONES PARA PONENTES</a>
-                <ul class="dropdown">
-                  <li><a href="index-rtl-mp-layout1.html">A1 </a></li>
-                  <li><a href="index-rtl-mp-layout1.html">A2</a></li>
-                  <li><a href="index-rtl-mp-layout1.html">A3 </a></li>
-                </ul>
-              </li>
+                  <?php
+                }
+                  ?>
+                    
               <ul class="dropdown">
-                <li><a href="#">XVI Simposio Internacional de Agricultura Sostenible</a></li>
-                <li><a href="#">XI Congreso Nacional de Agricultura Sostenible</a></li>
-                <li><a href="#">Eventos Paralelos</a></li>
-                <li><a href="#">Concursos </a></li>
-                <li><a href="#">Cursos Precongreso</a></li>     
+                <li><a href="simposio.php">XVI Simposio Internacional de Agricultura Sostenible</a></li>
+                <li><a href="agricultura_sostenible.php">XI Congreso Nacional de Agricultura Sostenible</a></li>
+                <li><a href="eventos_paralelos.php">Eventos Paralelos</a></li>
+                <li><a href="concurso_fotos.php">Concursos </a></li>
+                <li><a href="seccion_cursos_precongreso.php">Cursos Precongreso</a></li>     
               </ul>
+                   <?php
+                    if(empty($_SESSION["loggedin"])) {
+                    ?>
              <li><a href="#">INSCRIPCIONES Y REGISTRO</a>
+                 <?php
+                }
+                ?>
                 <ul class="dropdown">
                   <li><a href="inscripciones_registro.php">PROCEDIMIENTO DE INSCRIPCIÓN AL CONGRESO</a></li>
                   <li><a href="inscripcion_precongreso.php">INSCRIPCIÓN CURSOS PRECONGRESO</a></li>
@@ -143,7 +150,7 @@ if(empty($_SESSION)){
                 //var_dump($_SESSION["loggedin"]);
                 if(!empty($_SESSION["loggedin"])) {
               ?>
-              
+                <li class=""><a href="programa_detallado.php">PROGRAMA DETALLADO</a>
               <li class=""><a href="#galeria_home">Galeria</a>
               
               <?php
@@ -152,7 +159,7 @@ if(empty($_SESSION)){
               
                     <ul class="dropdown">
                       <li><a href="index-rtl-mp-layout1.html">Concurso de Fotografía</a></li>
-                      <li><a href="index-rtl-mp-layout1.html">Expor Virtual de experiencias exitosas</a></li>
+                      <li><a href="https://sites.google.com/view/cartelessomas2021/inicio"  target="_blank">Exposición de Carteles</a></li>
                       <li><a href="index-rtl-mp-layout1.html">Memoria Fotográfica </a></li>
                     </ul>
                   
@@ -163,13 +170,14 @@ if(empty($_SESSION)){
                 if(!empty($_SESSION["loggedin"])){
                 ?> 
                 <li><a href="perfil.php"> Mi perfil <span><i class="fa fa-user "></i></span></a></li>
+                
                      <li><a href="destruir_sesion.php" >CERRAR SESIÓN</a></li>
                 <?php
                 }else{   ?>
               
                   <li><a href="#" data-toggle="modal" data-target="#exampleModal">INICIAR SESIÓN</a></li>    
                <?php } ?>
-               <li class=""><a href="programa_detallado.php">PROGRAMA DETALLADO</a>
+             
             </ul>
           </nav>
         </div>
@@ -180,8 +188,20 @@ if(empty($_SESSION)){
       <a class="menuzord-brand pull-left flip" href="#">
         <img src="img/logos_somas.png" alt="Logo de SOMAS" style="height:40px;">
         <img src="img/emblema.jpg" alt="Emblema" style="">
+            <?php
+                if(empty($_SESSION["loggedin"])){
+                ?> 
+           <a class="btn btn-success"  data-toggle="modal" data-target="#exampleModal" href="#" style="margin-top: 10%;">Iniciar Sesión</a>
+          <?php
+                }
+          ?>
+          
       </a>
+        <div>
+         
+        </div>
     </div>
+      
     </div>
     
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="color:#1a6b10">
@@ -323,17 +343,6 @@ if(empty($_SESSION)){
 
 
 <script>
-          
-      $("#socio").change(function(){
-      var estado = $("#socio").val();
-      //alert(estado);
-          
-          if(estado == 1){
-               $('#Divmembresia').css('display', 'block');
-            }else{
-            $('#Divmembresia').css('display', 'none');
-            }
-    });
     
      function limpiarDatos(){
                $('#Nombre').val('');
@@ -562,7 +571,7 @@ if(empty($_SESSION)){
                                        
                                                   document.getElementById("aviso_pago").style.display = "block";
                                         }else if(data.respuesta == "3"){
-                                               window.location.href = 'index.php';    
+                                               window.location.href = 'index_sesion.php';    
                                            
                                         }
                                         else if(data.respuesta == "0"){
